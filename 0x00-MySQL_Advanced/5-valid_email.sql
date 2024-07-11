@@ -1,7 +1,7 @@
 -- creates a trigger that resets the attribute valid_email only when email changes
 DROP TRIGGER IF EXISTS resets_attribute;
 DELIMITER $$
-CREATE TRIGGER resets_attribute
+CREATE TRIGGER resets_email_attribute
 BEFORE UPDATE ON users
 FOR EACH ROW
 BEGIN
